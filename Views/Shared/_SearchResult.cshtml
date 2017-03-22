@@ -1,0 +1,39 @@
+﻿@model  ZillowTest.Web.ViewModels.PropertyViewModel
+
+<div class="col-md-6">
+    @if (Model.HasError)
+    {     
+        if (Model.ValidationErrorMessage == null)
+        {
+            <h2 class="largeFont">
+                @Model.PropertySearchResultBkt.ErrorDescription
+            </h2>
+        }
+        else
+        {
+            <div class="col-md-offset-4 h3 text-center row alert alert-danger">
+                <span>@Model.ValidationErrorMessage</span>
+            </div>
+        }
+    }
+    else
+    {
+        <h2 class="largeFont">
+            @Model.PropertySearchResultBkt.Street,
+        </h2>
+
+        <span class="col-md-offset-5 col-sm-offset-5">@Model.PropertySearchResultBkt.City, @Model.PropertySearchResultBkt.State @Model.PropertySearchResultBkt.Zipcode</span>
+     }
+</div>
+
+ @if (Model.ValidationErrorMessage == null)
+ {
+     <div class="col-md-6">
+         @* Map *@
+         <iframe width="600"
+                 height="450"
+                 frameborder="0" style="border: 0"
+                 src="https://www.google.com/maps/embed/v1/place?q=@Model.PropertySearchResultBkt.Latitude,@Model.PropertySearchResultBkt.Longitude&key=AIzaSyDu4Olp8seepyqpcuYy-wc-8hMfrcu6i9U" allowfullscreen></iframe>
+     </div>
+ }
+
