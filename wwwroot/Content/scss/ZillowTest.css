@@ -1,0 +1,77 @@
+﻿html, body, div, h1, h2, h3, h4, span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent; }
+
+h1 {
+  font: 300 38px/40px "Source Sans Pro","Helvetica Neue","HelveticaNeue",Arial,Helvetica,"Lucida Grande",sans-serif; }
+
+#search {
+  background: #333333 url("../../images/backgroudhome.jpg") top no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1000; }
+
+#feature {
+  padding: 280px 0 20px;
+  position: relative;
+  z-index: 200;
+  overflow: hidden; }
+
+#feature-wrap {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px; }
+  #feature-wrap #feature-search {
+    background: linear-gradient(135deg, rgba(7, 42, 73, 0.6) 0%, rgba(10, 74, 102, 0.6) 100%);
+    text-shadow: 1px 1px 1px #000000;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; }
+    #feature-wrap #feature-search input {
+      margin: 0;
+      padding: 10px 20px;
+      font: 300 20px/20px "source sans pro";
+      border: none;
+      -webkit-border-radius: 3px 3px 3px 3px;
+      -moz-border-radius: 3px 3px 3px 3px;
+      -ms-border-radius: 3px 3px 3px 3px;
+      border-radius: 3px 3px 3px 3px;
+      display: block;
+      width: 100%;
+      vertical-align: middle; }
+    #feature-wrap #feature-search button {
+      right: 0;
+      top: 0;
+      font: 300 22px/20px "source sans pro";
+      padding: 13px 20px;
+      margin: 0;
+      width: 110px;
+      background: #008000;
+      border: none;
+      -webkit-border-radius: 0 3px 3px 0;
+      -moz-border-radius: 0 3px 3px 0;
+      -ms-border-radius: 0 3px 3px 0;
+      border-radius: 0 3px 3px 0;
+      color: #fff; }
+      #feature-wrap #feature-search button i {
+        font-size: 16px;
+        line-height: 16px;
+        position: relative;
+        top: -2px; }
+    #feature-wrap #feature-search h1 {
+      text-align: left;
+      margin: 0 0 10px 0;
+      letter-spacing: -1px;
+      display: block;
+      color: #fff; }
+    #feature-wrap #feature-search .search {
+      position: relative; }
+
+div {
+  display: block; }
+
